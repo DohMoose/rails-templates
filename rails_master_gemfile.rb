@@ -44,18 +44,11 @@ git 'git://github.com/datamapper/dm-rails.git'
 
 gem 'dm-rails', '~> 0.10.2'
 
-git 'git://github.com/rspec/rspec.git'
-git 'git://github.com/rspec/rspec-core.git'
-git 'git://github.com/rspec/rspec-expectations.git'
-git 'git://github.com/rspec/rspec-mocks.git'
-git 'git://github.com/rspec/rspec-rails.git'
 
 group(:test) do
-  gem 'rspec',              '2.0.0.a9'
-  gem 'rspec-core',         '2.0.0.a9', :require => 'rspec/core'
-  gem 'rspec-expectations', '2.0.0.a9', :require => 'rspec/expectations'
-  gem 'rspec-mocks',        '2.0.0.a9', :require => 'rspec/mocks'
-  gem 'rspec-rails',        '2.0.0.a9'
+  gem 'shoulda'
+  gem 'mocha'
+  gem 'webrat'
 end
 GEMFILE
 end
